@@ -37,7 +37,9 @@ class FabricaLivro
             'C001_Categoria' => $categoria,
             'C001_Prefacio' => $prefacio,
             'C001_Classificacao' => $classificacao,
-            'C001_Favorito' => $favorito
+            'C001_Favorito' => $favorito,
+            'C001_DataInclusao' => $dateInclusao,
+            'C001_UsuarioInclusao' => $usuarioInclusao
         ]);
 
         DB::commit();
