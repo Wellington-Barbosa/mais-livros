@@ -17,15 +17,15 @@ class CreateC001Livro extends Migration
             $table->id();
             $table->string('C001_Codigo')->unique();
             $table->string('C001_Titulo');
-            $table->string('C001_Categoria');
-            $table->string('C001_Prefacio');
-            $table->string('C001_Status');
-            $table->string('C001_Classificacao');
-            $table->string('C001_Favorito');
-            $table->string('C001_DataInclusao');
-            $table->string('C001_UsuarioInclusao');
-            $table->string('C001_DataAlteracao');
-            $table->string('C001_UsuarioAlteracao');
+            $table->string('C001_Categoria')->nullable();
+            $table->string('C001_Prefacio')->nullable();
+            $table->string('C001_Status')->nullable();
+            $table->string('C001_Classificacao')->nullable();
+            $table->string('C001_Favorito')->nullable();
+            $table->string('C001_DataInclusao')->nullable();
+            $table->string('C001_UsuarioInclusao')->nullable();
+            $table->string('C001_DataAlteracao')->nullable();
+            $table->string('C001_UsuarioAlteracao')->nullable();
 
         });
     }
